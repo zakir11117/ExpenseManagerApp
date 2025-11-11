@@ -1,0 +1,24 @@
+@model ExpenseManagerApp.Models.Expense
+@{
+    ViewData["Title"] = "Create Expense";
+}
+<h1>Create Expense</h1>
+<form asp-action="Create" method="post" class="form">
+    <div class="form-group">
+        <label>Date</label>
+        <input asp-for="Date" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label>Category</label>
+        <input asp-for="Category" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Amount</label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Note</label>
+        <input asp-for="Note" class="form-control" />
+    </div>
+    <button class="btn btn-primary" type="submit">Save</button>
+</form>
