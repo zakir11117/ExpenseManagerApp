@@ -1,0 +1,18 @@
+@model ExpenseManagerApp.Models.Expense
+
+<h2>Delete Expense</h2>
+
+<p>Are you sure you want to delete this?</p>
+
+<ul>
+    <li><strong>Title:</strong> @Model.Title</li>
+    <li><strong>Amount:</strong> @Model.Amount</li>
+    <li><strong>Category:</strong> @Model.Category</li>
+    <li><strong>Date:</strong> @Model.Date.ToShortDateString()</li>
+</ul>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

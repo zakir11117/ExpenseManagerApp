@@ -1,0 +1,33 @@
+@model ExpenseManagerApp.Models.Expense
+
+<h2>Create Expense</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label>Title</label>
+        <input asp-for="Title" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Amount</label>
+        <input asp-for="Amount" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Category</label>
+        <input list="categories" asp-for="Category" class="form-control" />
+        <datalist id="categories">
+            @foreach (var cat in (List<string>)ViewBag.Categories)
+            {
+                <option value="@cat"></option>
+            }
+        </datalist>
+    </div>
+
+    <div class="form-group">
+        <label>Date</label>
+        <input asp-for="Date" type="date" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Save</button>
+</form>
