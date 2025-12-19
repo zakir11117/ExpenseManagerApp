@@ -1,0 +1,79 @@
+@model ExpenseManagerApp.Models.CategorySummaryViewModel
+@using System.Text.Json
+
+@{
+    ViewData["Title"] = "Category Summary";
+    // Serialize to JSON for JS usage
+    var labelsJson = JsonSerializer.Serialize(Model.Labels);
+    var totalsJson = JsonSerializer.Serialize(Model.Totals);
+}
+
+<h2>Category-wise Expense Summary</h2>
+
+<div class="card mb-3 p-3">
+    <div class="row">
+        <div class="col-md-8">
+            <canvas id="categoryChart" width="600" height="400"></canvas>
+        </div>
+        <div class="col-md-4">
+            <h5>Legend</h5>
+            <ul class="list-unstyled">
+                @for (int i = 0; i < Model.Labels.Count; i++)
+                {
+                    <li>
+                        <strong>@Model.Labels[i]</strong>
+                        <span class="text-muted"> — ₹@Model.Totals[i]</span>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Chart.js CDN -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const labels = @Html.Raw(labelsJson);
+    const totals = @Html.Raw(totalsJson);
+
+    // Generate a palette (simple random color generator)
+    function randomColor() {
+        const r = Math.floor(Math.random()*200)+30;
+        const g = Math.floor(Math.random()*200)+30;
+        const b = Math.floor(Math.random()*200)+30;
+        return `rgba(${r}, ${g}, ${b}, 0.8)`;
+    }
+
+    const bgColors = labels.map(_ => randomColor());
+
+    const ctx = document.getElementById('categoryChart').getContext('2d');
+    const categoryChart = new Chart(ctx, {
+        type: 'pie', // change to 'bar' if you prefer
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Expenses by Category',
+                data: totals,
+                backgroundColor: bgColors,
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'bottom'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let value = context.parsed;
+                            return context.label + ': ₹' + value;
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
