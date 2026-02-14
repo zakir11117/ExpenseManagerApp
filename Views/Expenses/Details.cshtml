@@ -1,0 +1,10 @@
+@model ExpenseManagerApp.Models.Expense
+
+<h2>Expense Details</h2>
+
+<p><strong>Title:</strong> @Model.Title</p>
+<p><strong>Amount:</strong> @Model.Amount</p>
+<p><strong>Category:</strong> @Model.Category</p>
+<p><strong>Date:</strong> @Model.Date.ToShortDateString()</p>
+
+<a asp-action="Index" class="btn btn-secondary">Back</a>
